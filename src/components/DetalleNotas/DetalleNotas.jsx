@@ -6,8 +6,8 @@ class DetalleNotas extends Component{
         return(
             <section className='detalle-nota'>
                 <header className='detalle-nota_header'>
-                    <h3 className='detalle-nota_titulo'>Nota </h3>
-                    <p className='detalle-nota_texto'>Registrar la nota</p>
+                    <h3 className='detalle-nota_titulo'>{this.props.titulo}</h3>
+                    <p className='detalle-nota_texto'>{this.props.nota}</p>
                 </header>
             </section>
         )

@@ -7,11 +7,10 @@ class ListaNotas extends Component{
     render(){
         return(
             <ul className='lista-notas'>
-                {this.props.notas.map((curso, index) =>{
+                {this.props.notas.map((valor, index) => {
                     return(
                         <li className='lista-notas_item' key = {index}>
-                            <div className='lista-nota_texto'>{curso}</div>
-                            <DetalleNotas></DetalleNotas>
+                            <DetalleNotas titulo = {valor.titulo} nota = {valor.nota}></DetalleNotas>
                         </li>
                     )
                 })}
